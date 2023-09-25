@@ -41,8 +41,7 @@ namespace DanfeSharp
 
         public void DesenharCreditos()
         {
-            Gfx.DrawString("Impresso com o software WN DanfeView. Disponível em: https://github.com/willianmz/danfeview.git", 
-                RetanguloCreditos, Danfe.EstiloPadrao.CriarFonteItalico(6), AlinhamentoHorizontal.Direita);
+            Gfx.DrawString("WN Sistemas", RetanguloCreditos, Danfe.EstiloPadrao.CriarFonteNegrito(6), AlinhamentoHorizontal.Direita);
         }
 
         private void DesenharCanhoto()

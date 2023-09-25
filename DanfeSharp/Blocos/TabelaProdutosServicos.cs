@@ -67,7 +67,7 @@ namespace DanfeSharp.Blocos
             {
                 var linha = new List<String>
                 {
-                    p.Codigo,
+                    p.GTIN,
                     p.DescricaoCompleta,
                     p.Ncm,
                     p.OCst,

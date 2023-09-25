@@ -33,8 +33,8 @@ namespace DanfeViewer
             this.pdfViewer = new PdfiumViewer.PdfViewer();
             this.btnGerarPDF = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblMensagem = new System.Windows.Forms.Label();
             this.btnConfig = new System.Windows.Forms.Button();
+            this.lblMensagem = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,15 +73,6 @@ namespace DanfeViewer
             this.panel1.Size = new System.Drawing.Size(570, 42);
             this.panel1.TabIndex = 5;
             // 
-            // lblMensagem
-            // 
-            this.lblMensagem.AutoSize = true;
-            this.lblMensagem.Location = new System.Drawing.Point(12, 13);
-            this.lblMensagem.Name = "lblMensagem";
-            this.lblMensagem.Size = new System.Drawing.Size(58, 17);
-            this.lblMensagem.TabIndex = 0;
-            this.lblMensagem.Text = "WN2021";
-            // 
             // btnConfig
             // 
             this.btnConfig.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -93,6 +84,15 @@ namespace DanfeViewer
             this.btnConfig.Text = "Sobre";
             this.btnConfig.UseVisualStyleBackColor = true;
             this.btnConfig.Click += new System.EventHandler(this.btnConfig_Click);
+            // 
+            // lblMensagem
+            // 
+            this.lblMensagem.AutoSize = true;
+            this.lblMensagem.Location = new System.Drawing.Point(12, 13);
+            this.lblMensagem.Name = "lblMensagem";
+            this.lblMensagem.Size = new System.Drawing.Size(58, 17);
+            this.lblMensagem.TabIndex = 0;
+            this.lblMensagem.Text = "WN2021";
             // 
             // formVisualizarPDF
             // 
@@ -108,6 +108,7 @@ namespace DanfeViewer
             this.Name = "formVisualizarPDF";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DanfeViewer";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

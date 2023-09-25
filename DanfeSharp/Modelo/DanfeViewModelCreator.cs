@@ -245,6 +245,7 @@ namespace DanfeSharp.Modelo
                 ProdutoViewModel produto = new ProdutoViewModel();
                 produto.Codigo = det.prod.cProd;
                 produto.Descricao = det.prod.xProd;
+                produto.GTIN = det.prod.cEAN;
                 produto.Ncm = det.prod.NCM;
                 produto.Cfop = det.prod.CFOP;
                 produto.Unidade = det.prod.uCom;

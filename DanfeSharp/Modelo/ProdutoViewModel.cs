@@ -23,6 +23,12 @@ namespace DanfeSharp.Modelo
         public String Descricao { get; set; }
 
         /// <summary>
+        /// <para>GTIN do produto ou serviço</para>
+        /// <para>Tag cEANTrib</para>
+        /// </summary>
+        public String GTIN { get; set; }
+
+        /// <summary>
         /// <para>Código NCM com 8 dígitos ou 2 dígitos (gênero)</para>
         /// <para>Tag NCM</para>
         /// </summary>
@@ -115,7 +121,7 @@ namespace DanfeSharp.Modelo
 
                 if (!String.IsNullOrWhiteSpace(InformacoesAdicionais))
                 {
-                    descriCaoCompleta += "\r\n" + InformacoesAdicionais;
+                    descriCaoCompleta += "\r\n" + InformacoesAdicionais + "\r\n" + "Codigo: " + Codigo;
                 }
                 
                 return descriCaoCompleta;

@@ -31,7 +31,7 @@ namespace DanfeViewer
                     ExibirPDF("Danfes/" + nomeArquivo);
                 }
 
-                MessageBox.Show("Arquivo criado com sucesso!");
+                lblMensagem.Text = "Arquivo gerado com sucesso!";
             }
             catch(Exception ex)
             {
